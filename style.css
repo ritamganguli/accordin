@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #23045f;
+}
+
+body {
+    background-color: #fffdfb;
+}
+
+.accordin {
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-style: italic;
+    font-style: 24px;
+}
+
+.item {
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+    display: grid;
+    /* 1fr matlab bhai tu para apna size le */
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.nuber {
+    font-size: 32px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: #186;
+}
+
+.paragraph_conatiner {
+    grid-column: 2/3;
+    display: none;
+}
+
+.paragraph_conatiner p {
+    line-height: 1.6;
+
+}
+.active .paragraph_conatiner{
+    display: block;
+}
